@@ -10,7 +10,6 @@ function KanbanBoard({ tickets, users, grouping, sorting }) {
   return (
     <div className="kanban-board">
       {Object.entries(sortedGroupedTickets).map(([groupName, groupTickets]) => (
-        console.log(groupName),
         <Column
           key={groupName}
           title={groupName}
